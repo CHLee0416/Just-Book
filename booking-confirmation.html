@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1" />
+    <title>Just Book</title>
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="ratepartner.css" /> -->
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="court1.css">
+    <link rel="stylesheet" href="booking-confirmation.css">
+  </head>
+
+  <body>
+<div class="background">
+  <input type="checkbox" name="" id="menu-toggle">
+
+        <div class="sidebar">
+            <div class="sidebar-container">
+                <div class="brand">
+                    <h2>
+                        <a href="index.html">
+                          <img class="logo" src="image/logo7.png" alt="" /></a>
+                      </h2>
+                </div>
+
+                <div class="sidebar-avartar">
+                    <div class="avartar-photo">
+                        <img src="image/alice.jpg" alt="">
+                    </div>
+
+                    <div class="avartar-info">
+                        <div class="avarta-text">
+                            <h4>Alice</h4>
+                            <small>1029-1234-235</small>
+                        </div>
+                        <span class="las la-angle-double-down"></span>
+                    </div>
+                </div>
+
+                <div class="sidebar-menu">
+                    <ul>
+                        <li>
+                            <a href="index.html" >
+                                <span class="fas fa-home"></span>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile.html" >
+                                <span class="fas fa-user"></span>
+                                <span>Profile Setting</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="history.html">
+                                <span class="fas fa-history"></span>
+                                <span>Booking History</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="booking.html" class="active">
+                                <span class="fas fa-check-circle"></span>
+                                <span>Online Booking</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="find.html">
+                                <span class="fas fa-search"></span>
+                                <span>Find Partner</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="rate.html">
+                                <span class="fas fa-star"></span>
+                                <span>Rate Partner</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                <span class="fas fa-phone-alt"></span>
+                                <span>Contact Us</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login1.html">
+                                <span class="fas fa-sign-out-alt"></span>
+                                <span>Log Out</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="social_media">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <header>
+                <div class="header-title-wrapper">
+                    <label for="menu-toggle">
+                        <span class="las la-bars"></span>
+                    </label>
+                    <div class="header-title">
+                        <a href="index.html"><h1>Just<span>Book</span></h1></a>
+                        <p><a href="#">Home</a><span class="las la-angle-right"></span><a href="#">Booking</a><span class="las la-angle-right"></span><a href="#">Booking Confirmation</a></p>
+                    </div>
+                </div>
+
+                <!-- <div class="header-action-group">
+                    <div class="history">
+                        <a href="#"><i class="fas fa-history"></i></a>
+                    </div>
+                    <div class="header-action">
+                        <button class="btn btn-main">
+                            <span class="fas fa-sign-in-alt"></span>
+                            <a href="#login">Login</a>
+                        </button>
+                    </div>
+                </div> -->
+
+            </header>
+        </div>
+
+       
+    <!-- Booking Confirmation -->
+    <section id="booking-confirmation">
+        <div class="container">
+            <div class="progress-bar">
+                <h1 class="booking-title">Booking</h1>
+                <div class="progress-bar-outer">
+                  <div class="progress-bar-inner" style="width: 66%;"></div>
+                </div>
+                <div class="progress-state">
+                  <span class="content-left">Booking</span>
+                  <span class="content-center">Confirmation</span>
+                  <span class="content-right">Payment</span>
+                </div>
+            </div>
+
+            <div class="confirmation-details justify-content-between row">
+                <h2>Confirmation details</h2>
+                <div class="col-6 court-no ">
+                  <div class="image-container ">
+                        <img src="image/court.png" alt=""> 
+                        <div class="court-no-overlay">
+                            <div id="courtText" class="court-text">Court 1</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <!-- <form style="" action="./payment.php" method="post" class="col=6"> -->
+                        <div class="date input ">
+                            <span class="input-title col-sm-4">Date</span>
+                            25 / 1 / 2023  
+                        </div>
+                        <div class="booktime input ">
+                            <span class="input-title col-sm-4">Time</span>
+                            <span id="bookingHour">10:00 - 11:00</span>
+                        </div>
+                        <div class="noofhour input ">
+                            <span class="input-title col-sm-4">No of Hour</span>
+                            <input type="number" id="noofhourInput" val="0"> 
+                            <button type="button" id="incrementButton" onclick="incrementTime()">+</button>
+                            <button type="button" id="decrementButton" onclick="decrementTime()">-</button>
+                        </div>
+                        <div class="hostname input ">
+                            <span class="input-title col-sm-4">Host Name</span>
+                            <input name="host-name" type="text" class="col-sm">
+                        </div>
+                        <div class="contactnumber input ">
+                            <span class="input-title col-sm-4">Contact Number</span>
+                            <input name="contact-number" type="text" class="col-sm">
+                        </div>
+                        <div class="noofpax input ">
+                            <span class="input-title col-sm-4">No of Pax</span>
+                            <input type="text" class="col-sm">
+                        </div>
+                        <div class="input radio">
+                            <div class="public-radio col-sm-4">
+                            <input type="radio" name="game-type" id="">
+                            <label for="">Public</label>
+                            </div>
+                            <div class="private-radio col-sm-4">
+                                <input type="radio" name="game-type" id="">
+                                <label for="">Private</label>
+                            </div>
+                        </div>
+                        <div class="submit-btn">
+                            <a href="payment.html">
+                            <input type="submit" class="" value="Let's Start The Game" >
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<footer class="footer">
+    <div class= "footer-container">
+        <div class= "footer-about">
+            <h2>JUST&nbspBOOK</h2>
+            <p>Genting Pura Kencana - Another prestigious project owned by The Genting Group. A nature inspired township at Sri Gading, Batu Pahat, Genting Pura Kencana is a 9,000 acres of freehold land, located within the educational hub of Batu Pahat and it is easily accesible to the North-South Expressway and all parts of Batu Pahat. It is poised to be the biggest satelite city of Batu pahat.</p>
+        </div>
+        <div class= "quicklinks">
+            <h2>Useful Links</h2>
+                <ul class="footer-box">
+                    <li><a href= "index.html">Home</a></li>
+                    <li><a href= "booking.html">Booking</a></li>
+                    <li><a href= "FP.html">Find Partner</a></li>
+                    <li><a href= "RP.html">Rate Partner</a></li>
+                    <li><a href= "contact.html">Contact</a></li>
+                </ul>
+        </div>
+        <div class= "sec-contact">
+        <h2>Contact Info</h2>
+            <ul class="info">
+                <li>
+                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                    <p><a href="https://goo.gl/maps/AAwWErZ6MgwzrygF7">No.1, Jalan Sisiran Pura Kencana 1A/1,<br> Taman Pura Kencana, off Jalan Kluang,<br> Sri Gading, 83300 Batu Pahat, Johor</a></p>
+                </li>
+                <li>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <p><a href="https://api.whatsapp.com/send?phone=60126648224&text=Welcome%20to%20Advant%20Logistics%20!%20How%20can%20I%20help%20you?">+60163034775 (Amirul)</a></p>
+                </li>
+                <li>
+                    <i class="fa fa-at fa-xl" aria-hidden="true"></i>
+                    <p><a href="http://www.batupahat.my/pura-kencana-clubhouse.html">pura-kencana-clubhouse</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>	
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./booking-confirmation.js"></script>
+    </body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1">
+        <title>Just Book</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="find.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    </head>
+
+    <body>
+        <div class="background">
+        <input type="checkbox" name="" id="menu-toggle">
+        <div class="overlay">
+            <label for="menu-toggle"></label>
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebar-container">
+                <div class="brand">
+                    <h2>
+                        <a href="index.html">
+                          <img class="logo" src="image/logo7.png" alt="" /></a>
+                      </h2>
+                </div>
+
+                <div class="sidebar-avartar">
+                    <div>
+                        <img src="image/alice.jpg" alt="">
+                    </div>
+
+                    <div class="avartar-info">
+                        <div class="avarta-text">
+                            <h4>Alice</h4>
+                            <small>1029-1234-235</small>
+                        </div>
+                        <span class="las la-angle-double-down"></span>
+                    </div>
+                </div>
+
+                <div class="sidebar-menu">
+                    <ul>
+                        <li>
+                            <a href="index.html" >
+                                <span class="fas fa-home"></span>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile.html">
+                                <span class="fas fa-user"></span>
+                                <span>Profile Setting</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="history.html">
+                                <span class="fas fa-history"></span>
+                                <span>Booking History</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="booking.html" >
+                                <span class="fas fa-check-circle"></span>
+                                <span>Online Booking</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="find.html" class="active">
+                                <span class="fas fa-search"></span>
+                                <span>Find Partner</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="rate.html">
+                                <span class="fas fa-star"></span>
+                                <span>Rate Partner</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                <span class="fas fa-phone-alt"></span>
+                                <span>Contact Us</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login1.html">
+                                <span class="fas fa-sign-out-alt"></span>
+                                <span>Log Out</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                
+
+                <div class="social_media">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <header>
+                <div class="header-title-wrapper">
+                    <label for="menu-toggle">
+                        <span class="las la-bars"></span>
+                    </label>
+                    <div class="header-title">
+                        <h1>Just<span>Book</span>
+                        <p><a href="#">Home</a><span class="las la-angle-right"></span><a href="find.html">Find Partner</a></p>
+                    </div>
+                </div>
+
+              
+
+            </header>
+
+            <main>
+               <div class="fp-container">
+                  <div class="head">
+                      <p class="head_1">Find <span>Friends</span></p>
+                  </div>
+               <div class="find-partner">
+                  <ul>
+                      <li>
+                          <i class="icon uil uil-schedule"></i>
+                          <div class="progress one">
+                              <p>1</p>
+                              <i class="uil uil-check"></i>
+                          </div>
+                          <p class="text">Date</p>
+                      </li>
+                      <li>
+                          <i class="icon uil uil-clock-two"></i>
+                          <div class="progress two">
+                              <p>2</p>
+                              <i class="uil uil-check"></i>
+                          </div>
+                          <p class="text">Time</p>
+                      </li>
+                      <li>
+                          <i class="icon uil uil-users-alt"></i>
+                          <div class="progress three">
+                              <p>3</p>
+                              <i class="uil uil-check"></i>
+                          </div>
+                          <p class="text">Pax</p>
+                      </li>
+                  </ul>
+               </div>
+                  <div class="form-outer">
+                      <form>
+                         <div class="page">
+                            <div class="field">
+                               <div class="label">
+                                  Date
+                               </div class="four">
+                               <input type="date" autocomplete="off" id="date" placeholder="DD/MM/YY">
+                            </div>
+                         </div>
+          
+                         <div class="page">
+                            <div class="field">
+                               <div class="label">
+                                  Time
+                               </div class="five">
+                               <input type="time" disabled id="appt" name="appt" min="08:00" max="22:00" required>
+                            </div>
+                         </div>
+          
+                         <div class="page">
+                            <div class="field">
+                               <div class="label">
+                                  Number of Pax
+                               </div class="six">
+                               <input type="Number" disabled id="number" min="1" max="8">
+                            </div>
+                         </div>
+                      </form>
+                   </div>
+          
+                   <div class="court">
+                      <a href="fpcourt.html">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                      
+                   </div>
+                
+            </main>
+</div>
+        
+            <footer class="footer">
+                <div class= "footer-container">
+                    <div class= "footer-about">
+                        <h2>JUST&nbspBOOK</h2>
+                        <p>Genting Pura Kencana - Another prestigious project owned by The Genting Group. A nature inspired township at Sri Gading, Batu Pahat, Genting Pura Kencana is a 9,000 acres of freehold land, located within the educational hub of Batu Pahat and it is easily accesible to the North-South Expressway and all parts of Batu Pahat. It is poised to be the biggest satelite city of Batu pahat.</p>
+                    </div>
+                    <div class= "quicklinks">
+                        <h2>Useful Links</h2>
+                            <ul class="footer-box">
+                                <li><a href= "index.html">Home</a></li>
+                                <li><a href= "booking.html">Booking</a></li>
+                                <li><a href= "FP.html">Find Partner</a></li>
+                                <li><a href= "RP.html">Rate Partner</a></li>
+                                <li><a href= "contact.html">Contact</a></li>
+                            </ul>
+                    </div>
+                    <div class= "sec-contact">
+                    <h2>Contact Info</h2>
+                        <ul class="info">
+                            <li>
+                                <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                                <p><a href="https://goo.gl/maps/AAwWErZ6MgwzrygF7">No.1, Jalan Sisiran Pura Kencana 1A/1,<br> Taman Pura Kencana, off Jalan Kluang,<br> Sri Gading, 83300 Batu Pahat, Johor</a></p>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <p><a href="https://api.whatsapp.com/send?phone=60126648224&text=Welcome%20to%20Advant%20Logistics%20!%20How%20can%20I%20help%20you?">+60163034775 (Amirul)</a></p>
+                            </li>
+                            <li>
+                                <i class="fa fa-at fa-xl" aria-hidden="true"></i>
+                                <p><a href="http://www.batupahat.my/pura-kencana-clubhouse.html">pura-kencana-clubhouse</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>	
+
+        
+
+        <script src="style.js"></script>
+        <script src="find.js"></script>
+    </body>
+</html>

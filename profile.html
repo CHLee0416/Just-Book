@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1">
+        <title>Just Book</title>
+
+        <link rel="stylesheet" href="profile.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    </head>
+
+    <body>
+        <div class="background">
+        <input type="checkbox" name="" id="menu-toggle">
+        <div class="overlay">
+            <label for="menu-toggle"></label>
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebar-container">
+                <div class="brand">
+                    <h2>
+                        <a href="index.html">
+                            <img class="logo" src="image/logo7.png" alt="" /></a>
+                    </h2>
+                </div>
+
+                <div class="sidebar-avartar">
+                    <div>
+                        <img src="image/alice.jpg" alt="">
+                    </div>
+
+                    <div class="avartar-info">
+                        <div class="avarta-text">
+                            <h4>Alice</h4>
+                            <small>1029-1234-235</small>
+                        </div>
+                        <span class="las la-angle-double-down"></span>
+                    </div>
+                </div>
+
+                <div class="sidebar-menu">
+                    <ul>
+                        <li>
+                            <a href="index.html" >
+                                <span class="fas fa-home"></span>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile.html" class="active">
+                                <span class="fas fa-user"></span>
+                                <span>Profile Setting</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="history.html">
+                                <span class="fas fa-history"></span>
+                                <span>Booking History</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="booking.html">
+                                <span class="fas fa-check-circle"></span>
+                                <span>Online Booking</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="find.html">
+                                <span class="fas fa-search"></span>
+                                <span>Find Partner</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="rate.html">
+                                <span class="fas fa-star"></span>
+                                <span>Rate Partner</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                <span class="fas fa-phone-alt"></span>
+                                <span>Contact Us</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login1.html">
+                                <span class="fas fa-sign-out-alt"></span>
+                                <span>Log Out</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="social_media">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <header>
+                <div class="header-title-wrapper">
+                    <label for="menu-toggle">
+                        <span class="las la-bars"></span>
+                    </label>
+                    <div class="header-title">
+                        <h1>Just<span>Book</span>
+                        <p><a href="#">Home</a><span class="las la-angle-right"></span><a href="#">Profile Setting</a></p>
+                    </div>
+                </div>
+
+            </header>
+
+            <main>
+                <div class="section-title">
+                    <h1>Profile Setting</h1>
+                </div>
+                <div class="account-setting">
+                    <div class="leftbox">
+                        <div class="profile-pic-div">
+                            <img src="image/alice.jpg" id="photo">
+                            <input type="file" id="file">
+                            <label for="file" id="uploadBtn">Choose Photo</label>
+                        </div>
+                        <div class="setting-menu">
+                            <ul>
+                              <li>
+                              <a onclick="tabs(0)" class="tab active">
+                                <i class="fas fa-user-edit"></i> Account</a>
+                              </li>
+                  
+                              <li>
+                                <a onclick="tabs(1)" class="tab"><i class="fas fa-key"></i> Password</a>
+                              </li>
+                  
+                              <li>
+                                <a onclick="tabs(2)" class="tab">
+                                    <i class="fas fa-shield-alt"></i> Privacy and Security</a>
+                              </li>
+                  
+                              <li>
+                                
+                                <a onclick="tabs(3)" class="tab">
+                                    <i class="fas fa-bell"></i> Notification</a>
+                              </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rightbox">
+                        <div class="account tabShow">
+                            <h1>Personal Info</h1>
+                            <div class="formBox">
+                                <div class="inputBox w50">
+                                    <input type="text" name="" value="Alice" required>
+						            <span>Full Name</span>
+                                </div>
+                                <div class="inputBox w50">
+                                    <input type="email" value="alice123@gmail.com"name="" required>
+						            <span>Email Address</span>
+                                </div>
+                                <div class="inputBox select">
+                                    <label>Gender</label><br>
+                                    <select id="genders" required>
+                                        <option value="male">Female</option>
+                                        <option value="female">Male</option>
+                                        <option value="notRespond">Prefer not to respond</option>
+                                    </select>
+                                </div>
+                                <div class="inputBox w50">
+                                    <label>Date of Birth</label>
+					                <input type="date" value="2005-07-22"
+                                    min="1923-01-01" max="2022-12-31" required>
+                                </div>
+                                <div class="inputBox w50">
+                                    <input type="number" value="18" name="" required>
+						            <span>Age</span>
+                                </div>
+                                <div class="inputBox w50">
+                                    <input type="text" value="012-3456789" name="" required>
+						            <span>Phone Number</span>
+                                </div>
+                                <div class="inputBox w100">
+                                    <textarea required>Taman University Parit Raja </textarea>
+                                    <span>Home Address</span>
+                                </div>
+                                <div class="inputBox w100">
+                                    <input type="submit" value="Update">
+                                    <input type="submit" value="Cancel">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="password tabShow">
+                            <h1>Change Password</h1>
+                            <div class="formBox">
+                                <div class="inputBox w100">
+                                    <input type="password" name="" required>
+						            <span>Old Password</span>
+                                </div>
+                                <div class="inputBox w100">
+                                    <input type="password" name="" required>
+						            <span>New Password</span>
+                                </div>
+                                <div class="inputBox w100">
+                                    <input type="password" name="" required>
+						            <span>Confirm New Password</span>
+                                </div>
+                                <div class="inputBox w100">
+                                    <input type="submit" value="Update">
+                                    <input type="submit" value="Cancel">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="security tabShow">
+                            <h1>Privacy and Security</h1>
+                            <div class="invite onoffbox">
+                                <div class="onofftitle"><h2>Invitation Privacy</h2></div>
+                                <div class="onofftoggle">
+                                    <div class="onofftoggle-button" onclick="Animatedtoggle()"></div>
+                                </div>
+                                <div class="onofftext">OFF</div>
+                                <p>If turn on everyone can invite you to play a game.</p>
+                            </div>
+
+                            <div class="specialh2"><h2>Login Activity</h2></div>
+                            <h4>Where you're logged in</h4>
+                            <p><span class="fas fa-map-marker-alt"> Parit Raja</span><br>Active Now·This XiaoMi Redmi Note 9S</p>
+                            <p><span class="fas fa-map-marker-alt"> Parit Raja</span><br>September 18,2022·Windows</p>
+                        </div>
+
+                        <div class="notification tabShow">
+                            <h1>Notification</h1>
+                            <h2>Activity through email</h2>
+                            <form>
+                                <input type="checkbox" id="email1" name="email1" value="Email1">
+                                <label for="email1"> Email me when someone invite me.</label><br>
+                                <input type="checkbox" id="email2" name="email2" value="Email2">
+                                <label for="email2"> Email me when someone rate me.</label><br>
+                                <input type="checkbox" id="email3" name="email3" value="Email3">
+                                <label for="email3"> Email remind when today have game.</label><br><br>
+                            </form>
+                            <h2>Activity through WhatsApp</h2>
+                            <form>
+                                <input type="checkbox" id="whatsapp1" name="whatsapp1" value="Whatsapp1">
+                                <label for="whatsapp1"> WhatsApp me the invitation.</label><br>
+                                <input type="checkbox" id="whatsapp2" name="whatsapp2" value="whatsapp2">
+                                <label for="whatsapp2"> Allow people whatsApp me.</label><br>
+                            </form>
+                            <div class="formBox">
+                                <div class="inputBox w100">
+                                    <input type="submit" value="Update">
+                                    <input type="submit" value="Cancel">
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+            </main>
+        </div>
+</div>
+
+<footer class="footer">
+    <div class= "footer-container">
+        <div class= "footer-about">
+            <h2>JUST&nbspBOOK</h2>
+            <p>Genting Pura Kencana - Another prestigious project owned by The Genting Group. A nature inspired township at Sri Gading, Batu Pahat, Genting Pura Kencana is a 9,000 acres of freehold land, located within the educational hub of Batu Pahat and it is easily accesible to the North-South Expressway and all parts of Batu Pahat. It is poised to be the biggest satelite city of Batu pahat.</p>
+        </div>
+        <div class= "quicklinks">
+            <h2>Useful Links</h2>
+                <ul class="footer-box">
+                    <li><a href= "index.html">Home</a></li>
+                    <li><a href= "booking.html">Booking</a></li>
+                    <li><a href= "FP.html">Find Partner</a></li>
+                    <li><a href= "RP.html">Rate Partner</a></li>
+                    <li><a href= "contact.html">Contact</a></li>
+                </ul>
+        </div>
+        <div class= "sec-contact">
+        <h2>Contact Info</h2>
+            <ul class="info">
+                <li>
+                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                    <p><a href="https://goo.gl/maps/AAwWErZ6MgwzrygF7">No.1, Jalan Sisiran Pura Kencana 1A/1,<br> Taman Pura Kencana, off Jalan Kluang,<br> Sri Gading, 83300 Batu Pahat, Johor</a></p>
+                </li>
+                <li>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <p><a href="https://api.whatsapp.com/send?phone=60126648224&text=Welcome%20to%20Advant%20Logistics%20!%20How%20can%20I%20help%20you?">+60163034775 (Amirul)</a></p>
+                </li>
+                <li>
+                    <i class="fa fa-at fa-xl" aria-hidden="true"></i>
+                    <p><a href="http://www.batupahat.my/pura-kencana-clubhouse.html">pura-kencana-clubhouse</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>	
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+            <script src="profile.js"></script>
+
+    </body>
+
+</html>

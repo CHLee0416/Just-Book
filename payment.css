@@ -1,0 +1,76 @@
+.background{
+    background-image: url('image/bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 120%;
+}
+
+.payment-details{
+    margin-bottom: 30px;
+
+}
+.payment-details h2, .payment-details h3{
+   text-align: center;
+}
+
+.payment-details .radio{
+    width: 25%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.payment-details .radio-option{
+    align-self: flex-start;
+}
+
+.submit-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.submit-btn .btn{
+    color: var(--main-accent);
+    background-color: var(--primary-color);
+    border: 0;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.submit-btn .btn:hover{
+    color: var(--main-accent);
+    background-color: var(--secondary-color);
+}
+
+#payment h6{
+    text-align: center;
+} 
+
+#payment .btn-wrap, .img-wrap{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+#payment .img-wrap i{
+    color: rgb(5, 209, 38);
+    font-size: 8rem;
+}
+
+
+.sec-contact h2{
+    margin-left: 10%;
+}
+
+h4{
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+

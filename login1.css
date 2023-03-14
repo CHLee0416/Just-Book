@@ -1,0 +1,282 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+  :root {
+    --primary-color: #f6685e;
+    --secondary-color: #002347;
+    --third-color: #000000;
+    --fourth-color: #ffffff;
+    --fifth-color: #ffddd2;
+    --main-accent: #e9eefd;
+    --main-text: #4b5876;
+    --shadow: rgba(17, 17, 26, 0.1) 2px 2px 16px;
+}
+
+
+.login-container{
+    width: 100%;
+    height: 110vh;
+    background-image: url(image/bg42.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+   
+}
+
+.login-text{
+    color: rgba(255, 255, 255, 0.571);
+    position: relative;
+    top: 3%;
+    left: 15%;
+    text-align: center;
+}
+
+.login-text p{
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+    margin-left: 20rem;
+  
+}
+
+.login-text h1{
+    font-size: 50px;
+    line-height: 100px;
+    margin-left: -20rem;
+    margin-top: 0rem;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff ;
+    background: url(image/energy.jpg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+.modalForm {
+    width: 32.5rem;
+    min-height: 29.5rem;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 5px 8px 8px rgba(255, 255, 255, 0.5) #000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+    position: absolute;
+    margin: 7% 60%;
+  }
+  
+  .actionBtns {
+    width: 80%;
+    background-color: #ff5003;
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  }
+  
+  .actionBtn {
+    padding: 1em;
+    width: 50%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .moveBtn {
+    position: absolute;
+    width: 50%;
+    height: 90%;
+    margin: 2px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background-color: #fff;
+    font-size: 0.8em;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transform: translateX(0);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .rightBtn {
+    transform: translateX(98%);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .inputGroup {
+    width: 450px;
+    height: 40px;
+    margin: 0.8em 3em;
+    background-color: rgba(245, 245, 245);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
+  
+  .inputGroup i {
+    flex: 1;
+    text-align: center;
+    color: #666;
+    font-size: 15px;
+  }
+  
+  .inputGroup input {
+    flex: 5;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    color: #444;
+  }
+  
+  .inputGroup input:focus {
+    outline: none;
+  }
+  
+  .forgot-pass a {
+    color: var(--fifth-color);
+    margin-left: 55px;
+  }
+  
+  .forgot-pass a:hover {
+    color: #004aad;
+    text-decoration: underline;
+  }
+  
+  .submitBtn {
+    width: 250px;
+    padding: 1em;
+    margin: 1em 12em;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: #ff5003;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    cursor: pointer;
+    font-size: 0.8em;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+  }
+  
+  .submitBtn:hover {
+    background-color: #004aad;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .social-text {
+    margin: 10px 0;
+    font-size: 16px;
+    text-align: center;
+    color: #ffddd2;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icon {
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff5003;
+    border: 1px solid #ff5003;
+    border-radius: 50px;
+    margin: 0 5px 20px 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .social-icon:hover {
+    color: #004aad;
+    border-color: #004aad;
+  }
+  
+  .form {
+    display: none;
+  }
+  
+  .signupForm {
+    display: block;
+  }
+  
+  .loginForm {
+    display: block;
+  }
+
+  @media (max-width: 980px) {
+    .modalForm {
+       
+        margin: 10% 5%;
+        width: 80%;
+        min-height: 20%;  
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.48);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(9.3px);
+        -webkit-backdrop-filter: blur(9.3px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+
+      .login-text p{
+        margin-left: -10%;
+    }
+
+    .login-text{
+        left: 5%
+    }
+    .inputGroup {
+        width: 55%;
+        height: 45px;
+        margin: 0.8em 7em;
+        background-color: rgba(245, 245, 245);
+      }
+      .forgot-pass a {
+        margin-left: 20%;
+      }
+
+      login-container{
+        width: 100%;
+        height: 100vh;
+        background-image: url(image/bg18.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+       
+    }
+    
+  }
+  /*--------------------------------------------------------------
+  Login End
+  --------------------------------------------------------------*/
+  
+

@@ -1,0 +1,100 @@
+/*----------Booking page--------*/
+
+#booking {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0vh 2vw;
+    
+  }
+
+  .background{
+    background-image: url('image/bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+  
+  .booking-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vh;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 5px;
+  }
+  
+  .progress-bar {
+    padding: 1vh 15vw;
+  }
+  
+  .progress-bar-outer {
+    background-color: var(--secondary-color);
+    height: 8vh;
+    padding: 2% 2%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 50px;
+  }
+  
+  .progress-bar-inner {
+    background-color: white;
+    height: 5vh;
+    width: 25%;
+    border-radius: 50px;
+  }
+  
+  .progress-state {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .progress-state span {
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 30px;
+  }
+  
+  .time-picker {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 5vh 0vw;
+    margin: 0vw 10vw;
+  }
+  
+  .ui-datepicker{
+    margin: auto;
+  }
+  .time-picker form{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+ #datePickerBtn, #timePickerBtn{
+    color: var(--main-accent);
+    background-color: #ff5003;
+    border: 0;
+    font-size: 1.2rem;
+ }
+  
+ .sec-contact h2{
+  margin-left: 10%;
+}
+ 
+  /*----------Booking page--------*/
+
+  h4{
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+  }

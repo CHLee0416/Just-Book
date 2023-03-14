@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* Add a gray background color with some padding */
+main {
+  font-family: Arial;
+  padding: 20px;
+  text-align: center;
+  background-image: url('bg9.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+/* Header/Blog Title */
+.contact-header {
+  height: 20%;
+  padding: 50px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 0%;
+  background-color: none;
+}
+
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.column-left {   
+  float: left;
+  width: 40%;
+  background-color: none;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 60%;
+  padding-left: 20px;
+  padding-bottom: 40px;
+}
+
+/* Fake image */
+.fakeimg {
+  width: 100%;
+  padding: 20px;
+}
+
+.fakeimg-host {
+  width: 100%;
+  height: 100px;
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+  text-align: center;
+  align-items: center;
+}
+
+.address {
+  margin-top: 0px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.email {
+  margin-top: 40px;
+  text-decoration: none;
+}
+
+.phone {
+  margin-top: 60px;
+}
+
+.card i {
+  font-size: 30px;
+  color: #ff5003;
+  float: left;
+  width: 55px;
+  height: 55px;
+  background: #ffddd2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card h4 {
+  padding: 0 0 0 70px;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #222222;
+}
+
+.card p {
+  padding: 0 0 0 70px;
+  margin-bottom: 0;
+  font-size: 20px;
+  color: #555555;
+  text-decoration: none;
+}
+
+ .card a{
+  text-decoration: none;
+  color: black;
+ }
+
+/* Add a card effect for articles */
+.card {
+padding: 40px;
+margin-top: -2.5vh;
+height: 535px;
+border-radius: 0%;
+text-align: left;
+   /* From https://css.glass */
+background: rgba(255, 255, 255, 0.7);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.8px);
+-webkit-backdrop-filter: blur(8.8px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+.container {
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.7);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.8px);
+-webkit-backdrop-filter: blur(8.8px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+padding: 20px;
+margin-top: -20px;
+border-radius: 0%;
+background-color: none;
+text-align: left;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+width: 100%; /* Full width */
+height: 40%;
+padding: 6px; /* Some padding */
+border: 1px solid #ccc; /* Gray border */
+border-radius: 4px; /* Rounded borders */
+box-sizing: border-box; /* Make sure that padding and width stays in place */
+margin-top: 6px; /* Add a top margin */
+margin-bottom: 5px; /* Bottom margin */
+resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+color: #000;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+background-color: #ff5003;
+color: #fff;
+left: 50px;
+padding: 10px 30px;
+border: none;
+border-radius: 12px;
+}
+
+.submit {
+margin-left: 45%;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+background-color: var(--secondary-color);
+color: #fff;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .column-left, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+
+  .card{
+    background: #f4f1ec;
+  }
+}
+
+
+
+.background{
+background-image: url('image/bg1.png');
+background-repeat: no-repeat;
+background-size: cover;
+width: 140%;
+height: 100%;
+text-decoration: none;
+}
+
+
+
+
+
+
